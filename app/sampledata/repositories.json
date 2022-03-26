@@ -1,0 +1,77 @@
+{
+  "data": [
+    {
+      "id": 465840613,
+      "name": "bootcamp-sportheca",
+      "owner": {
+        "login": "jordanclaudino",
+        "avatar_url": "https://avatars.githubusercontent.com/u/57989980?v=4"
+      },
+      "stargazers_count": 0,
+      "language": "Java",
+      "html_url": "https://github.com/jordanclaudino/bootcamp-sportheca",
+      "description": "Abstraindo Bootcamp Sportheca"
+    },
+    {
+      "id": 471582470,
+      "name": "BusinessCard",
+      "owner": {
+        "login": "jordanclaudino",
+        "avatar_url": "https://avatars.githubusercontent.com/u/57989980?v=4"
+      },
+      "stargazers_count": 0,
+      "language": "Kotlin",
+      "html_url": "https://github.com/jordanclaudino/BusinessCard",
+      "description": "Aplicativos para criação e gerenciamento de Cartões de Visita"
+    },
+    {
+      "id": 457531038,
+      "full_name": "jordanclaudino/dio-desafio-github-primeiro",
+      "owner": {
+        "login": "jordanclaudino",
+        "avatar_url": "https://avatars.githubusercontent.com/u/57989980?v=4"
+      },
+      "stargazers_count": 0,
+      "language": null,
+      "html_url": "https://github.com/jordanclaudino/dio-desafio-github-primeiro",
+      "description": "Desafio de Projeto sobre Git/GitHub"
+    },
+    {
+      "id": 462927901,
+      "name": "dio-exercicios-temperaturas",
+      "owner": {
+        "login": "jordanclaudino",
+        "avatar_url": "https://avatars.githubusercontent.com/u/57989980?v=4"
+      },
+      "stargazers_count": 0,
+      "language": "Java",
+      "html_url": "https://github.com/jordanclaudino/dio-exercicios-temperaturas",
+      "description": "Calcular média de temperaturas no Semestre"
+    },
+    {
+      "id": 461045773,
+      "name": "e-crossbank",
+      "owner": {
+        "login": "jordanclaudino",
+        "avatar_url": "https://avatars.githubusercontent.com/u/57989980?v=4"
+      },
+      "stargazers_count": 0,
+      "language": null,
+      "html_url": "https://github.com/jordanclaudino/e-crossbank",
+      "description": "Banco imaginado para o Projeto do Bootcamp da Dio.me"
+    },
+    {
+      "id": 468972979,
+      "name": "RegistroPonto",
+      "owner": {
+        "login": "jordanclaudino",
+        "avatar_url": "https://avatars.githubusercontent.com/u/57989980?v=4"
+      },
+      "stargazers_count": 0,
+      "language": "Kotlin",
+      "html_url": "https://github.com/jordanclaudino/RegistroPonto",
+      "description": "Aplicativo de Registro de Ponto para o Trabalho"
+    }
+  ]
+
+}
