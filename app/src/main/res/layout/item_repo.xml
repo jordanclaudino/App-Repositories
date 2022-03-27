@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mcv_repo"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
     app:cardCornerRadius="@dimen/half_padding"
     app:cardElevation="@dimen/half_padding"
-    app:cardUseCompatPadding="true">
+    app:cardUseCompatPadding="true"
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -29,7 +31,7 @@
             android:layout_marginTop="@dimen/half_padding"
             android:layout_marginEnd="@dimen/half_padding"
             android:textStyle="bold"
-            android:textColor="@color/black"
+
             app:layout_constraintStart_toEndOf="@id/iv_owner"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -43,6 +45,7 @@
             android:layout_marginEnd="@dimen/half_padding"
             android:ellipsize="end"
             android:maxLines="2"
+            android:textColor="@color/purple_500"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/tv_repo_name"
             app:layout_constraintTop_toBottomOf="@id/tv_repo_name"
@@ -53,8 +56,8 @@
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             app:chipIcon="@android:drawable/star_off"
-            app:chipBackgroundColor="@color/white"
             app:chipIconTint="#FAFA02"
+            android:textColor="@color/black"
             app:layout_constraintTop_toBottomOf="@id/tv_repo_description"
             app:layout_constraintStart_toStartOf="@id/tv_repo_name"
             tools:text="@sample/repositories.json/data/stargazers_count"/>

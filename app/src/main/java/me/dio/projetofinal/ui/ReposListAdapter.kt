@@ -11,6 +11,7 @@ import me.dio.projetofinal.databinding.ItemRepoBinding
 
 class RepoListAdapter : ListAdapter<Repo, RepoListAdapter.ViewHolder>(DiffCallback()) {
 
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder{
         val inflater = LayoutInflater.from(parent.context)
         val binding = ItemRepoBinding.inflate(inflater, parent, false)
@@ -38,7 +39,7 @@ class RepoListAdapter : ListAdapter<Repo, RepoListAdapter.ViewHolder>(DiffCallba
 }
 
 class DiffCallback : DiffUtil.ItemCallback<Repo>(){
-    override fun areItemsTheSame(oldItem: Repo, newItem: Repo) = oldItem ==newItem
+    override fun areItemsTheSame(oldItem: Repo, newItem: Repo) = oldItem == newItem
     override fun areContentsTheSame(oldItem: Repo, newItem: Repo) = oldItem.id == newItem.id
 
 }

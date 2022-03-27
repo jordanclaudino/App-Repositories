@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Projeto Final</string>
+    <string name="txt_search">Pesquisar</string>
+    <dimen name="half_padding">8dp</dimen>
+    <dimen name="normal_padding">16dp</dimen>
+    <dimen name="extra_padding">32dp</dimen>
+</resources>
