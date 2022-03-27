@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Projeto Final</string>
+    <string name="app_name">App Repositories</string>
     <string name="txt_search">Pesquisar</string>
     <string name="txt_dialog_message">Abrir Repositório no Navegador?</string>
     <dimen name="half_padding">8dp</dimen>
