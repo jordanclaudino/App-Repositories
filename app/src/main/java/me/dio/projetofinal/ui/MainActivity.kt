@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import androidx.appcompat.widget.SearchView
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import me.dio.projetofinal.R
 import me.dio.projetofinal.core.createDialog
 import me.dio.projetofinal.core.createProgressDialog
@@ -44,11 +45,26 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
                 is MainViewModel.State.Success -> {
                     dialog.dismiss()
                     adapter.submitList(it.list)
+                    adapter.onItemClick = { repo ->
+                        val builder = MaterialAlertDialogBuilder(this)
+                        builder.setTitle(adapter.nameRepo)
+                        builder.setMessage(getString(R.string.txt_dialog_message))
+                        builder.setPositiveButton("Sim"){ dialog, which ->
+                            val url = adapter.html
+                            val intent = Intent(Intent.ACTION_VIEW)
+                            intent.data = Uri.parse(url)
+                            startActivity(intent)
+                            Log.e("TAG", repo.description)
+                        }
+                        builder.setNegativeButton("Não"){ dialog, which ->
+                            return@setNegativeButton
+                        }
+                        builder.show()
+                    }
                 }
             }
         }
     }
-
 
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

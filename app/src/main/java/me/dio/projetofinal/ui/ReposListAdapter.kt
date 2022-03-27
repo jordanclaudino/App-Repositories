@@ -22,6 +22,14 @@ class RepoListAdapter : ListAdapter<Repo, RepoListAdapter.ViewHolder>(DiffCallba
         holder.bind(getItem(position))
     }
 
+    var onItemClick: ((Repo) -> Unit)? = null
+
+    var html : String? = null
+
+    var nameRepo : String? = null
+
+
+
     inner class ViewHolder(private val binding: ItemRepoBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
@@ -33,6 +41,12 @@ class RepoListAdapter : ListAdapter<Repo, RepoListAdapter.ViewHolder>(DiffCallba
 
             Glide.with(binding.root.context)
                 .load(item.owner.avatarURL).into(binding.ivOwner)
+
+            binding.mcvRepo.setOnClickListener {
+                nameRepo = item.name
+                html = item.htmlURL
+                onItemClick?.invoke(item)
+            }
         }
     }
 
